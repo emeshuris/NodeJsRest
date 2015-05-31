@@ -7,5 +7,5 @@ var app = express();
 app.get('/api/dives/:id', wines.findById);
 app.get('/api/dives', wines.findAll);
 
-app.listen(3000);
-console.log('Listening on port 3000.');
+app.listen(8080);
+console.log('Listening on port 8080.');

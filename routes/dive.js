@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient,
     Server = require('mongodb').Server,
     db;
 
-var mongoClient = new MongoClient(new Server('localhost', 27017));
+var mongoClient = new MongoClient(new Server('EMMMBP', 27017));
 mongoClient.open(function(err, mongoClient) {
     db = mongoClient.db("DiveAnalyzer");
     db.collection('Dive', {strict:true}, function(err, collection) {
